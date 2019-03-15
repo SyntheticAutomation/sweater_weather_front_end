@@ -16,13 +16,20 @@
         <section class="dashboard-grid">
             <div class="row">
                 <div class="col-1-of-2">
-                    <div class="card">
-                        <span id="current-weather__time"></span>
-                        <span id="current-weather__temperature"></span>
+                    <div class="card card--left">
+                        <div class="current-weather">
+                            <span id="current-weather__condition"></span>
+                            <span id="current-weather__icon"></span>
+                            <br>
+                            <span id="current-weather__temperature"></span>
+                            <span id="fahrenheit-symbol">F</span>
+                            <br>
+                            <span id="current-weather__time"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="card">
+                    <div class="card card--right">
                         Hourly for the rest of the day (feels like temp, icon)
                     </div>
                 </div>

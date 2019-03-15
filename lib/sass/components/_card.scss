@@ -11,4 +11,16 @@
     opacity: 0.8;
     /*          x  y  blur   shadowcolor */
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+    &--left {
+        transform: translateY(20px);
+    }
+
+    &--right {
+        transform: translateY(-20px);
+    }
+
+    .current-weather {
+        padding-top: 3rem;
+    }
 }
