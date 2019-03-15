@@ -1,0 +1,14 @@
+.card {
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-primary-dark, 1),
+        rgba($color-primary, 1));
+    height: 45rem;
+    border-radius: 1%;
+
+    width: 50%;
+    margin: auto;
+    opacity: 0.8;
+    /*          x  y  blur   shadowcolor */
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
