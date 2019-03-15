@@ -25,6 +25,5 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
-
-.header__text-box {
-  display: block; }
+  .header__text-box {
+    display: block; }
