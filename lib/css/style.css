@@ -18,12 +18,20 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 203, 130, 0.8), rgba(255, 130, 40, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
 
 body {
   font-family: 'Quicksand', sans-serif;
   color: #FFFFFF;
   text-align: center; }
+
+#fahrenheit-symbol {
+  font-size: 5rem; }
+
+#current-weather__temperature {
+  font-size: 8rem; }
 
 .card {
   background-image: linear-gradient(to right top, #ff8228, #ffa546);
@@ -34,6 +42,12 @@ body {
   opacity: 0.8;
   /*          x  y  blur   shadowcolor */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .card--left {
+    transform: translateY(20px); }
+  .card--right {
+    transform: translateY(-20px); }
+  .card .current-weather {
+    padding-top: 3rem; }
 
 .row {
   max-width: 114rem;
