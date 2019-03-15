@@ -1,10 +1,3 @@
-/*
-
-COLORS:
-
-#ffcb82, #f68127, #ffa546, #faae39, #ffb955, #9c3615, #ff8228 and white, #f6bf55
-
-*/
 *,
 *::after,
 *::before {
@@ -28,7 +21,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 203, 130, 0.8), rgba(246, 129, 39, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 203, 130, 0.8), rgba(255, 130, 40, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
