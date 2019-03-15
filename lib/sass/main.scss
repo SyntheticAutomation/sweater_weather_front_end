@@ -1,47 +1,12 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-primary: #ffa546;
-$color-primary-dark: #ff8228;
-$color-primary-light: #ffcb82;
-$color-mahogany: #9c3615;
+@import "layout/header";
 
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    /* set font size here if you want to specify a font size that responds to browser default font size which defaults to 16px  */
-    /* this allows visually impaired users to have a better, more responsive UI/UX, like if they set their chrome default font size to large */
-    /* also makes it easier to use rem instead of px */
-    /* default is 16px */
-    /* if you want it to be 10px, 10/16 = .625, so do 62.5% */
-     font-size: 62.5%;
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    color: #FFFFFF;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.header {
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-        url(../img/hero.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-
-    &__text-box {
-        display: block;
-    }
-}
+@import "pages/home";

@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* set font size here if you want to specify a font size that responds to browser default font size which defaults to 16px  */
+    /* this allows visually impaired users to have a better, more responsive UI/UX, like if they set their chrome default font size to large */
+    /* also makes it easier to use rem instead of px */
+    /* default is 16px */
+    /* if you want it to be 10px, 10/16 = .625, so do 62.5% */
+    // this defines what 1rem is.
+     font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+}
