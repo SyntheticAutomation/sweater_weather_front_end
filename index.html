@@ -11,9 +11,31 @@
     <header class="header">
         <div class="header__text-box">
             <h1 class="heading-primary">Sweater Weather</h1>
-            <span id="current-weather__time"></span>
-            <span id="current-weather__temperature"></span>
         </div>
+        
+        <section class="dashboard-grid">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="card">
+                        <span id="current-weather__time"></span>
+                        <span id="current-weather__temperature"></span>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="card">
+                        Hourly for the rest of the day (feels like temp, icon)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-2-of-2">
+                    <div class="footer">
+                        Looking Forward (7 day forecast)
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
