@@ -27,4 +27,5 @@ CSS3
 Sass/SCSS
 JavaScript
 Icons8
+[PureCSSLoader](https://loading.io/css/)
 
