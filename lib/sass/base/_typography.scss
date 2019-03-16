@@ -11,3 +11,14 @@ body {
 #current-weather__temperature {
     font-size: 8rem;
 }
+
+#current-weather__condition {
+    font-size: 4rem;
+}
+
+.header {
+    &__text-box {
+        font-size: 3rem;
+    }
+}
+
