@@ -13,8 +13,12 @@ body {
         font-size: 8.5rem;
     }
 
+    &__time {
+        font-size: 2.5rem;
+    }
+
     &__location {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     &__condition {
@@ -33,3 +37,11 @@ body {
     }
 }
 
+
+em.hourly__condition {
+    font-size: 2rem;
+}
+
+em.daily__condition {
+    font-size: 2rem;
+}

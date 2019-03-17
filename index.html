@@ -44,12 +44,12 @@
     </header>
 
     <div id="location-form">
-        Enter Your Location: <input type="text" id="my-location-field" placeholder="Las Vegas, NV">
+        Enter Your Location: <input type="text" id="my-location-field" placeholder="Example: Reno, NV">
         <input class="btn__submit" type="submit" value="Submit" onclick="respondToInput()">
     </div>
     
     <div class="dashboard">
-        <div class="lds-roller">
+        <div class="lds-roller"> 
             <div></div>
             <div></div>
             <div></div>
@@ -59,12 +59,12 @@
             <div></div>
             <div></div>
         </div>
-        <span id="current-weather__time"></span>
         <section class="dashboard-grid">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="card card--left">
                         <div id="current-weather__location"></div>
+                        <div id="current-weather__time"></div>
                         <div class="current-weather">
                             <img id="current-weather__icon"></img> <br>
                             <span id="current-weather__temperature"></span>
@@ -76,20 +76,173 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="card card--right">
-                        Hourly for the rest of the day (feels like temp, icon)
+                        <div class="forecast">
+                            <div class="hourly">   
+                                <em class="hourly__condition"></em>
+                                <div class="ahead">
+                                    <div class="row__hourly">
+                                        <div class="ahead__1-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__1-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__1-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__1-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row__hourly">
+                                        <div class="ahead__2-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__2-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__2-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__2-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row__hourly">
+                                        <div class="ahead__3-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__3-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__3-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__3-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row__hourly">
+                                        <div class="ahead__4-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__4-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__4-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__4-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row__hourly">
+                                        <div class="ahead__5-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__5-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__5-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__5-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row__hourly">
+                                        <div class="ahead__6-hours">
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__6-hours--time"></span>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <img class="ahead__6-hours--icon"></img>
+                                            </div>
+                                            <div class="col-1-of-3">
+                                                <span class="ahead__6-hours--temp"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-2-of-2">
-                    <div class="footer">
-                        Looking Forward (7 day forecast)
+        </section>
+        <footer>
+            <div class="card card--footer">
+                <em class="daily__condition"></em>
+                <div class="daily-weather">
+                    <div class="row__daily">
+                        <div class="col-1-of-7">
+                            <span class="day__1--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__2--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__3--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__4--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__5--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__6--name"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__7--name"></span>
+                        </div>
+                    </div>
+                    <div class="row__daily">
+                        <div class="col-1-of-7">
+                            <img class="day__1--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__2--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__3--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__4--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__5--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__6--icon"></img>
+                        </div>
+                        <div class="col-1-of-7">
+                            <img class="day__7--icon"></img>
+                        </div>
+                    </div>
+                    <div class="row__daily">
+                        <div class="col-1-of-7">
+                            <span class="day__1--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__2--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__3--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__4--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__5--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__6--temp"></span>
+                        </div>
+                        <div class="col-1-of-7">
+                            <span class="day__7--temp"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

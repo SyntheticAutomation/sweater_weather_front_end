@@ -45,8 +45,11 @@ body {
 #current-weather__temperature {
   font-size: 8.5rem; }
 
+#current-weather__time {
+  font-size: 2.5rem; }
+
 #current-weather__location {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 #current-weather__condition {
   font-size: 2rem; }
@@ -57,6 +60,12 @@ body {
 
 .header__text-box {
   font-size: 3rem; }
+
+em.hourly__condition {
+  font-size: 2rem; }
+
+em.daily__condition {
+  font-size: 2rem; }
 
 .card {
   background-image: linear-gradient(to right top, #ff8228, #ffa546);
@@ -71,8 +80,20 @@ body {
     transform: translateY(-50px); }
   .card--right {
     transform: translateY(-80px); }
+  .card--footer {
+    width: 90vw;
+    height: 15rem;
+    margin-bottom: 100px; }
   .card .current-weather {
     padding-top: 4rem; }
+  .card .hourly__condition {
+    display: block;
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  .card .daily-weather {
+    margin-top: 2rem; }
 
 .lds-roller {
   display: inline-block;
@@ -151,15 +172,17 @@ body {
   left: 10px; }
 
 .row {
+  margin-bottom: 8rem;
   max-width: 114rem;
-  margin: 0 auto;
-  margin-bottom: 8rem; }
+  margin: 0 auto; }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
     float: left; }
+  .row__hourly {
+    margin-bottom: 1rem; }
 
 .col-1-of-2 {
   margin-top: 8rem;
@@ -167,9 +190,19 @@ body {
   .col-1-of-2:not(:last-child) {
     margin-right: 1rem; }
 
-.col-2-of-2 {
-  width: 100%;
-  height: 20vh; }
+.col-1-of-3 {
+  width: calc((100% - 2 * 1rem) / 3); }
+  .col-1-of-3 img {
+    transform: translateY(-20px); }
+  .col-1-of-3:not(:last-child) {
+    margin-right: 1rem; }
+
+.col-1-of-7 {
+  padding-bottom: .5rem;
+  width: calc((100% - 6 * 2rem) / 7);
+  display: inline-block; }
+  .col-1-of-7:not(:last-child) {
+    margin-right: 1rem; }
 
 .header__text-box {
   display: block; }
