@@ -23,4 +23,12 @@
     .current-weather {
         padding-top: 4rem;
     }
+
+    .hourly {
+        &__condition {
+            display: block;
+            padding-bottom: 4rem;
+            padding-top: 1rem;
+        }
+    }
 }

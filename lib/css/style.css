@@ -58,6 +58,9 @@ body {
 .header__text-box {
   font-size: 3rem; }
 
+.hourly__condition {
+  font-size: 2rem; }
+
 .card {
   background-image: linear-gradient(to right top, #ff8228, #ffa546);
   height: 45rem;
@@ -73,6 +76,10 @@ body {
     transform: translateY(-80px); }
   .card .current-weather {
     padding-top: 4rem; }
+  .card .hourly__condition {
+    display: block;
+    padding-bottom: 4rem;
+    padding-top: 1rem; }
 
 .lds-roller {
   display: inline-block;
@@ -161,6 +168,17 @@ body {
   .row [class^="col-"] {
     float: left; }
 
+.hourly-row {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
+  .hourly-row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .hourly-row [class^="col-"] {
+    float: left; }
+
 .col-1-of-2 {
   margin-top: 8rem;
   width: calc((100% - 1rem) / 2); }
@@ -170,6 +188,13 @@ body {
 .col-2-of-2 {
   width: 100%;
   height: 20vh; }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 1rem) / 3); }
+  .col-1-of-3 img {
+    transform: translateY(-20px); }
+  .col-1-of-3:not(:last-child) {
+    margin-right: 1rem; }
 
 .header__text-box {
   display: block; }
