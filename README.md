@@ -15,6 +15,7 @@ This project uses the following design principles & strategies:
     - 7-1 Architecture
     - SCSS Syntax
     - Easing Functions
+    - Custom Grids
 
 - HTML
     - BEM (Block Element Modifier) Tag Conventions
