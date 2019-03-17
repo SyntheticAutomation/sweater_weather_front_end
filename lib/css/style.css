@@ -43,10 +43,17 @@ body {
   font-size: 5rem; }
 
 #current-weather__temperature {
-  font-size: 8rem; }
+  font-size: 8.5rem; }
+
+#current-weather__location {
+  font-size: 3rem; }
 
 #current-weather__condition {
-  font-size: 4rem; }
+  font-size: 2rem; }
+
+#current-weather__windspeed {
+  padding-top: 10rem;
+  font-size: 1.5rem; }
 
 .header__text-box {
   font-size: 3rem; }
@@ -66,7 +73,7 @@ body {
   .card--right {
     transform: translateY(-80px); }
   .card .current-weather {
-    padding-top: 3rem; }
+    padding-top: 4rem; }
 
 .lds-roller {
   display: inline-block;

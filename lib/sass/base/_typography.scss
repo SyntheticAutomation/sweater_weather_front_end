@@ -8,12 +8,23 @@ body {
     font-size: 5rem;
 }
 
-#current-weather__temperature {
-    font-size: 8rem;
-}
+#current-weather {
+    &__temperature {
+        font-size: 8.5rem;
+    }
 
-#current-weather__condition {
-    font-size: 4rem;
+    &__location {
+        font-size: 3rem;
+    }
+
+    &__condition {
+        font-size: 2rem;
+    }
+
+    &__windspeed {
+        padding-top: 10rem;
+        font-size: 1.5rem;
+    }
 }
 
 .header {
