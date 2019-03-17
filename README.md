@@ -9,18 +9,18 @@ Agile Board: https://waffle.io/SyntheticAutomation/sweater_weather_front_end
 
 
 ## Design
-This project uses the following design principles:
+This project uses the following design principles & strategies:
 
 - CSS
-- BEM (Block Element Modifier) Tag Conventions
-- 7-1 Architecture
-- SCSS Syntax
-- Easing Functions
+    - 7-1 Architecture
+    - SCSS Syntax
+    - Easing Functions
 
-~HTML~
+- HTML
+    - BEM (Block Element Modifier) Tag Conventions
 
-
-~JavaScript~
+- JavaScript
+    - Event Bubbling
 
 ## Tools & Technologies
 - HTML5
@@ -29,4 +29,5 @@ This project uses the following design principles:
 - JavaScript
 - Icons8
 - [PureCSSLoader](https://loading.io/css/)
+- MomentJS
 
