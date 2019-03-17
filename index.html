@@ -20,7 +20,7 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">My location</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">my location</a></li>
                 <!-- in order of population size. -->
                 <li class="navigation__item"><a href="#" class="navigation__link">new york, ny</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">los angeles, ca</a></li>
@@ -37,54 +37,60 @@
         </nav>
     </div>
 
-
-
     <header class="header">
         <div class="header__text-box">
             <h1 class="heading-primary">Sweater Weather</h1>
         </div>
     </header>
-    <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+    <div id="location-form">
+        Enter Location: <input type="text" id="my-location-field" placeholder="Las Vegas, NV">
+        <input class="btn__submit" type="submit" value="Submit" onclick="respondToInput()">
     </div>
-    <section class="dashboard-grid">
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="card card--left">
-                    <div class="current-weather">
-                        <img id="current-weather__icon"></img> <br>
-                        <span id="current-weather__location"></span><br>
-                        <span id="current-weather__temperature"></span>
-                        <span id="fahrenheit-symbol">F</span><br>
-                        <span id="current-weather__condition"></span><br>
-                        <span id="current-weather__time"></span>
+    
+    <div class="dashboard">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <span id="current-weather__time"></span>
+        <section class="dashboard-grid">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="card card--left">
+                        <div class="current-weather">
+                            <img id="current-weather__icon"></img> <br>
+                            <span id="current-weather__location"></span><br>
+                            <span id="current-weather__temperature"></span>
+                            <span id="fahrenheit-symbol">F</span><br>
+                            <span id="current-weather__condition"></span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="card card--right">
+                        Hourly for the rest of the day (feels like temp, icon)
                     </div>
                 </div>
             </div>
-            <div class="col-1-of-2">
-                <div class="card card--right">
-                    Hourly for the rest of the day (feels like temp, icon)
+            
+            <div class="row">
+                <div class="col-2-of-2">
+                    <div class="footer">
+                        Looking Forward (7 day forecast)
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-2-of-2">
-                <div class="footer">
-                    Looking Forward (7 day forecast)
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-    </footer>
+        </section>
+        <footer>
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
     <script src="lib/script.js"></script>

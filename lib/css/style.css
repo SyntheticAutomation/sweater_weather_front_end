@@ -62,9 +62,9 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1s ease-in; }
   .card--left {
-    transform: translateY(20px); }
+    transform: translateY(-50px); }
   .card--right {
-    transform: translateY(-20px); }
+    transform: translateY(-80px); }
   .card .current-weather {
     padding-top: 3rem; }
 

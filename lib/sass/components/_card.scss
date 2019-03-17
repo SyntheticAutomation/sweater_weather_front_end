@@ -14,11 +14,11 @@
     animation: fadeIn 1s ease-in;
 
     &--left {
-        transform: translateY(20px);
+        transform: translateY(-50px);
     }
 
     &--right {
-        transform: translateY(-20px);
+        transform: translateY(-80px);
     }
 
     .current-weather {
