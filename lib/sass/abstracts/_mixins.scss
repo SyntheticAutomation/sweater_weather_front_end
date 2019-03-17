@@ -5,3 +5,13 @@
         clear: both;
     }
 }
+
+@mixin rowBaseFormatting {
+    max-width: $grid-width;
+    margin: 0 auto;
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+    }
+}

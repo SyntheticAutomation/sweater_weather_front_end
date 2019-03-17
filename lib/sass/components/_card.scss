@@ -20,6 +20,12 @@
         transform: translateY(-80px);
     }
 
+    &--footer {
+        width: 90vw;
+        height: 15rem;
+        margin-bottom: 100px;
+    }
+
     .current-weather {
         padding-top: 4rem;
     }
@@ -27,8 +33,14 @@
     .hourly {
         &__condition {
             display: block;
-            padding-bottom: 4rem;
+            padding-bottom: 2.5rem;
             padding-top: 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
         }
+    }
+
+    .daily-weather {
+        margin-top: 2rem;
     }
 }
